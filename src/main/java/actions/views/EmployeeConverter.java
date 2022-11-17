@@ -17,7 +17,7 @@ public class EmployeeConverter {
      * @param ev EmployeeViewのインスタンス
      * @return Employeeのインスタンス
      */
-    private static Employee toModel(EmployeeView ev) {
+    public static Employee toModel(EmployeeView ev) {
 
         return new Employee(
                 ev.getId(),
@@ -44,7 +44,7 @@ public class EmployeeConverter {
      * @param e Employeeのインスタンス
      * @return EmployeeViewのインスタンス
      */
-    private static EmployeeView toView(Employee e) {
+    public static EmployeeView toView(Employee e) {
 
         if(e == null) {
             return null;
